@@ -11,6 +11,7 @@ app.set('view engine', 'ejs');
 
 app.get('/', function(req, res) {
 	res.render('home', ({countries:countries}));
+	console.log("visit to the home page"); 
 });  
 
 app.get('/numbers', function(req, res){  
