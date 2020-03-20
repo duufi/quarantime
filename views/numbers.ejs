@@ -1,0 +1,94 @@
+<%- include("partials/header") %>
+
+<style>
+	h5 {
+		text-align: center; 
+	}
+	.card-text {
+		font-size:3vmin;
+		text-align: center;
+	}
+	#statButton {
+		text-align: center; 
+		
+	html, body {
+  		height: 100%;
+		}
+
+	#wrap {
+  		min-height: 100%;
+	}
+
+	#main {
+  		overflow:auto;
+  		padding-bottom:150px; /* this needs to be bigger than footer height*/
+}
+
+	.footer {
+  		position: relative;
+  		margin-top: -150px; /* negative value of footer height */
+  		height: 150px;
+  		clear:both;
+ 		padding-top:20px;
+} 	
+	}
+</style>
+
+	<nav class="navbar navbar-expand navbar-dark navbar-fixed-top bg-dark">
+        <a class="navbar-brand" style="font-size:5vmin;" href="/">Home</a>
+        	<div class="navbar-collapse collapse" id="navbarNav">
+				<ul class="navbar-nav">
+					<li class="nav-item">
+						<a class="nav-link" href="/numbers" style="font-size:5vmin;">Numbers</a>
+					</li>
+				</ul>
+        </div>
+    </nav>
+
+
+ <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+          <h1 class="display-4" style="text-align: center;">By The Numbers</h1>
+          <p class="lead" style="color:black; text-align: center; font-size:5vmin;">Current COVID-19 Statistics</p>
+			<p style="text-align: center; font-size:3vmin;">
+				These statistics are automatically updated in response to <a href="https://www.worldometers.info/coronavirus/"> Worldometer </a>
+			</p>
+        </div>
+    </div>
+
+<div class="container">
+	<div class='row'>
+		<div class="col-lg-4 col-md-6 ml-sm-6">
+			<div class="card" style="width: 18rem;">
+		  <img class="card-img-top" src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1352&q=80" alt="Card image 	 	 	cap">
+				<div class="card-body">
+					<h5 class="card-title">Globally</h5>
+					<p class="card-text"><%= data.deaths %> People Died</p>
+				</div>
+			</div>
+		</div>
+			
+	
+		<div class="col-lg-4 col-md-6 ml-sm-6">
+			<div class="card" style="width: 18rem;">
+		  <img class="card-img-top" src="https://images.unsplash.com/photo-1550792436-181701c71f63?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80">
+				<div class="card-body">
+					<h5 class="card-title">Globally</h5>
+					<p class="card-text"><%= data.cases %> Total Cases</p>
+				</div>
+			</div>
+		</div>
+		
+		<div class="col-lg-4 col-md-6 ml-sm-6">
+			<div class="card" style="width: 18rem;">
+		  <img class="card-img-top" src="https://images.unsplash.com/photo-1452697620382-f6543ead73b5?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" alt="Card image 	 	 	cap">
+				<div class="card-body">
+					<h5 class="card-title">Globally</h5>
+					<p class="card-text"><%= data.recovered %> People Recovered</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<%- include("partials/footer") %>

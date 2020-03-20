@@ -1,0 +1,20 @@
+{
+  "name": "donothing",
+  "version": "1.0.0",
+  "description": "first deploy to heroku",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1", 
+	"start": "node app.js"
+  },
+  "author": "Drake Sadosky",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "ejs": "^3.0.1",
+    "express": "^4.17.1",
+    "node-fetch": "^2.6.0",
+    "novelcovid": "^1.0.4",
+    "request": "^2.88.2"
+  }
+}
