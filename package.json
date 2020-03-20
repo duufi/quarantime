@@ -9,7 +9,7 @@
   },
   "author": "Drake Sadosky",
   "license": "ISC",
-  "dependencies": {
+  "dependencies": { 
     "body-parser": "^1.19.0",
     "ejs": "^3.0.1",
     "express": "^4.17.1",
